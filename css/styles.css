@@ -5,10 +5,16 @@ body {
     margin: 0;
 }
 
-.header {
-    background-color: #1F2937;
+.pad {
+    flex: 1;
+}
+
+.header, .greeting-field {
     display: flex;
-    
+}
+
+.header, .greeting-field {
+    background-color: #1F2937;
 }
 
 .header.info {
@@ -19,12 +25,11 @@ body {
 }
 
 
-.logo, a {
+.logo, a, h2, button {
     color: #f9FAF8;
 }
 
 .logo {
-    color: #F9FaF8;
     font-size: 24px;
 }
 
@@ -40,6 +45,27 @@ a {
     text-decoration: none;
 }
 
-.pad {
-    flex: 1;
+.hero {
+    display: flex;
+    gap: 20px;
+    flex: 5;
+}
+
+h2 {
+    font-size: 48px;
+    font-weight: 1000px;
+    margin: 0;
+}
+
+.main-text > p {
+    font-size: 18px;
+    color: #E5E7EB;
+    margin: 0;
+}
+
+button {
+    background-color: #3882F6;
+    border: 0;
+    padding: 5px 20px;
+    border-radius: 8px;
 }
