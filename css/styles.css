@@ -1,8 +1,10 @@
 body {
+    height: 100vh;
     display: flex;
     flex-direction: column;
     padding: 0;
     margin: 0;
+    overflow: hidden;
 }
 
 .pad {
@@ -11,18 +13,21 @@ body {
 
 .header, .greeting-field, .info-field, .quote-field, .signup-field {
     display: flex;
+    flex: auto;
 }
 
-.header, .greeting-field {
+.header, .greeting-field, .footer {
     background-color: #1F2937;
 }
 
+.header-info, .hero, .info, .promote {
+    flex: 0 1 900px;
+}
 /* header */
 .header-info {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    flex: 5;
 }
 
 
@@ -50,7 +55,6 @@ a {
 .hero {
     display: flex;
     gap: 20px;
-    flex: 5;
 }
 
 h2 {
@@ -58,7 +62,9 @@ h2 {
     font-weight: 1000px;
     margin: 0;
 }
-
+.main-text {
+    flex: 1;
+}
 .main-text > p {
     font-size: 18px;
     color: #E5E7EB;
@@ -97,9 +103,6 @@ button {
     width: 150px;
 }
 
-.info {
-    flex: 5;
-}
 
 /* quote */
 .quote-field {
@@ -113,7 +116,6 @@ button {
     color: #1F2937;
 }
 .quote-with-author {
-    flex: 3;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -132,11 +134,11 @@ button {
 }
 .promote {
     background-color: #3882F6;
-    flex: 5;
     justify-content: space-evenly;
     align-items: center;
     border-radius: 8px;
     display: flex;
+    height: 100px;
 }
 
 .signup-field button {
@@ -151,4 +153,12 @@ button {
 strong {
     font-size: 16px;
     font-weight: 1000;
+}
+
+/* footer */
+.footer {
+    color: #E5E7EB;
+    height: 70px;
+    display: flex;
+    align-items: center;
 }
