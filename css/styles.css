@@ -9,7 +9,7 @@ body {
     flex: 1;
 }
 
-.header, .greeting-field {
+.header, .greeting-field, .info-field {
     display: flex;
 }
 
@@ -17,7 +17,7 @@ body {
     background-color: #1F2937;
 }
 
-.header.info {
+.header-info {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -68,4 +68,31 @@ button {
     border: 0;
     padding: 5px 20px;
     border-radius: 8px;
+}
+
+.cases img {
+    height: 150px;
+    width: 150px;
+    border-radius: 8px;
+}
+
+.overview {
+    font-size: 36px;
+    font-weight: 1000px;
+    color: #1F2937;
+    text-align: center;
+}
+
+.cases {
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+}
+
+.cases p {
+    text-align: center;
+    width: 150px;
+}
+.info {
+    flex: 5;
 }
