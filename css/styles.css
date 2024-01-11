@@ -9,7 +9,7 @@ body {
     flex: 1;
 }
 
-.header, .greeting-field, .info-field {
+.header, .greeting-field, .info-field, .quote-field {
     display: flex;
 }
 
@@ -17,6 +17,7 @@ body {
     background-color: #1F2937;
 }
 
+/* header */
 .header-info {
     display: flex;
     align-items: center;
@@ -45,6 +46,7 @@ a {
     text-decoration: none;
 }
 
+/* greeting */
 .hero {
     display: flex;
     gap: 20px;
@@ -70,6 +72,7 @@ button {
     border-radius: 8px;
 }
 
+/* information */
 .cases img {
     height: 150px;
     width: 150px;
@@ -93,6 +96,30 @@ button {
     text-align: center;
     width: 150px;
 }
+
 .info {
     flex: 5;
+}
+
+.quote-field {
+    background-color: #E5E7EB;
+}
+
+.quote {
+    font-size: 36px;
+    font-weight: light;
+    font-style: italic;
+    color: #1F2937;
+}
+.quote-with-author {
+    flex: 3;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 720px;
+}
+
+.author {
+    align-self: flex-end;
+    font-weight: bold;
 }
